@@ -3,6 +3,9 @@
 Welcome to my **React Portfolio**! This is a modern, responsive website designed to showcase my skills, projects, and professional journey. Built with cutting-edge technologies like **React**, **Vite**, and **TailwindCSS**, this portfolio reflects my passion for web development and design. 🚀
 
 ## Screenshots
+![Image Alt](https://github.com/DippaFudd/React-Portfolio/blob/8ca56ad8500e661526e5600021b9f9d93c07c8bb/2025-06-03%20(10).png)
+![Image Alt](https://github.com/DippaFudd/React-Portfolio/blob/8ca56ad8500e661526e5600021b9f9d93c07c8bb/2025-06-03%20(11).png)
+
 
 ---
 
