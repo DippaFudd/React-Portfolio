@@ -65,7 +65,7 @@ export default function Portfolio() {
       tech: ['TypeScript','Tailwind CSS', 'JavaScript'],
       image: '/JRecruiter.png',
       github: 'https://github.com/DippaFudd/JRecruiter',
-      live: 'https://github.com/DippaFudd/JRecruiter'
+      live: 'https://j-recruiter.vercel.app/'
     }
   ];
 
