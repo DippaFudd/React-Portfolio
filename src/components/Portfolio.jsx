@@ -24,7 +24,7 @@ export default function Portfolio() {
   const projects = [
     {
       title: 'Lexi AI',
-      description: 'An AI-powered chatbot application designed to provide intelligent and interactive conversations. Built with TypeScript, JavaScript, and styled using Tailwind CSS for a modern and responsive UI.',
+      description: 'An AI-powered chatbot application designed to provide intelligent and interactive conversations. Built with TypeScript, JavaScript, and styled using Tailwind CSS for a modern and responsive UI.🚨 Reminder The live website is just for preview but in order to get AI repsonse the program to has be ran locally then open to localhost.',
       tech: ['TypeScript', 'JavaScript', 'TailwindCSS'],
       image: '/LexiAI.png',
       github: 'https://github.com/DippaFudd/Lexi-AI',
@@ -50,8 +50,8 @@ export default function Portfolio() {
       description: 'A personal portfolio website showcasing my projects, skills, and contact information. Built with React and Tailwind CSS.',
       tech: ['React', 'Tailwind CSS'],
       image: '/Portfolio.png',
-      github: '#',
-      live: '#'
+      github: 'https://github.com/DippaFudd/React-Portfolio',
+      live: 'https://react-portfolio-ashen-nine.vercel.app/'
     },
     { title: 'Tic-Tac-Toe Game',
       description: 'A simple Tic-Tac-Toe game built with HTML, CSS, and JavaScript. Features include a responsive design and local storage for game state.',
@@ -61,7 +61,7 @@ export default function Portfolio() {
       live: 'https://tic-tac-toe-self-one-63.vercel.app/'
     },
     { title: 'JRecruiter',
-      description: 'A job board application that connects job seekers with employers. Built with TypeScript, TailwindCSS, and JavaScript.',
+      description: 'A job board application that connects job seekers with employers. Built with TypeScript, TailwindCSS, and JavaScript.🛠️ Most of site is up and functional but is still under construction.',
       tech: ['TypeScript','Tailwind CSS', 'JavaScript'],
       image: '/JRecruiter.png',
       github: 'https://github.com/DippaFudd/JRecruiter',
