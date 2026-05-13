@@ -39,7 +39,7 @@ export default function Portfolio() {
     { title: 'README Generator',
       description: 'A command-line application that generates a professional README.md file based on user input. Built with Node.js and Inquirer.',
       tech: ['JavaScript'],
-      image: '/README.png',
+      image: '/Screenshot (4).png',
       github: 'https://github.com/DippaFudd/README-generator',
     },
     { title: 'Tic-Tac-Toe Game',
