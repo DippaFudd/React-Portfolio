@@ -7,51 +7,40 @@ export default function Portfolio() {
   const [isVisible, setIsVisible] = useState({});
 
   const skills = [
-    { name: 'HTML', level: 85, icon: <Code className="w-5 h-5" /> },
-    { name: 'JavaScript', level: 85, icon: <Code className="w-5 h-5" /> },
-    { name: 'React', level: 80, icon: <Code className="w-5 h-5" /> },
-    { name: 'CSS/Tailwind', level: 80, icon: <Palette className="w-5 h-5" /> },
-    { name: 'Node.js', level: 85, icon: <Database className="w-5 h-5" /> },
-    { name: 'SQL', level: 85, icon: <Database className="w-5 h-5" /> },
-    { name: 'MongoDB', level: 80, icon: <Database className="w-5 h-5" /> },
-    { name: 'REST API', level: 80, icon: <Code className="w-5 h-5" /> },
-    { name: 'Git/GitHub', level: 90, icon: <Code className="w-5 h-5" /> },
-    { name: 'AI', level: 90, icon: <Briefcase className="w-5 h-5" /> },
-    { name: 'TypeScript', level: 80, icon: <Code className="w-5 h-5" /> },
-    { name: 'Next.js', level: 80, icon: <Code className="w-5 h-5" /> },
+    { name: 'HTML', icon: <Code className="w-5 h-5" /> },
+    { name: 'JavaScript', icon: <Code className="w-5 h-5" /> },
+    { name: 'Responsive Design', icon: <Code className="w-5 h-5" /> },
+    { name: 'CSS', icon: <Palette className="w-5 h-5" /> },
+    { name: 'Node.js', icon: <Database className="w-5 h-5" /> },
+    { name: 'Async/Await', icon:  <Database className="w-5 h-5" /> },
+    { name: 'DOM Manipulation', icon: <Database className="w-5 h-5" /> },
+    { name: 'REST API', icon: <Code className="w-5 h-5" /> },
+    { name: 'Git/GitHub', icon: <Code className="w-5 h-5" /> },
+    { name: 'Vs Code',  icon: <Briefcase className="w-5 h-5" /> },
   ];
 
   const projects = [
     {
-      title: 'Lexi AI',
-      description: 'An AI-powered chatbot application designed to provide intelligent and interactive conversations. Built with TypeScript, JavaScript, and styled using Tailwind CSS for a modern and responsive UI.🚨 Reminder The live website is just for preview but in order to get AI repsonse the program to has be ran locally then open to localhost.',
-      tech: ['TypeScript', 'JavaScript', 'TailwindCSS'],
-      image: '/LexiAI.png',
-      github: 'https://github.com/DippaFudd/Lexi-AI',
-      live: 'https://lexi-ai-two.vercel.app/'
-    },
-    {
       title: 'Weather App',
       description: 'A weather application that provides real-time weather data and forecasts using the OpenWeather API. Built with JavaScript, HTML and CSS.',
-      tech: ['JavaScript','HTML','CSS'],
+      tech: ['HTML','CSS','JavaScript'],
       image: '/WeatherApp.png',
       github: 'https://github.com/DippaFudd/Weather-App',
       live: 'https://dippafudd.github.io/Weather-App/'
     },
     {
-      title: 'Crypto Dashboard',
-      description: 'A cryptocurrency dashboard that displays real-time prices, market data, and trends. Built with JavaScript, TypeScript, and Tailwind CSS.',
-      tech: ['JavaScript', 'TypeScript', 'Tailwind CSS'],
-      image: '/CD.png',
-      github: 'https://github.com/DippaFudd/Crypto-dashboard',
-      live: 'https://crypto-dashboard-three-orcin.vercel.app/'
+      title: 'PawMood',
+      description: 'A pet mood tracker that allows users to log their pets moods and activities. Built with HTML, CSS, and JavaScript ..This is a Group Project.',
+      tech: ['HTML', 'CSS', 'JavaScript'],
+      image: '/PawMood.png',
+      github: 'https://github.com/AndresZ25/PawMood-Project-1',
+      live: 'https://andresz25.github.io/PawMood-Project-1/'
     },
-    { title: 'Portfolio Website',
-      description: 'A personal portfolio website showcasing my projects, skills, and contact information. Built with React and Tailwind CSS.',
-      tech: ['React', 'Tailwind CSS'],
-      image: '/Portfolio.png',
-      github: 'https://github.com/DippaFudd/React-Portfolio',
-      live: 'https://react-portfolio-ashen-nine.vercel.app/'
+    { title: 'README Generator',
+      description: 'A command-line application that generates a professional README.md file based on user input. Built with Node.js and Inquirer.',
+      tech: ['JavaScript'],
+      image: '/README.png',
+      github: 'https://github.com/DippaFudd/README-generator',
     },
     { title: 'Tic-Tac-Toe Game',
       description: 'A simple Tic-Tac-Toe game built with HTML, CSS, and JavaScript. Features include a responsive design and local storage for game state.',
@@ -60,13 +49,6 @@ export default function Portfolio() {
       github: 'https://github.com/DippaFudd/Tic_Tac_Toe',
       live: 'https://tic-tac-toe-self-one-63.vercel.app/'
     },
-    { title: 'JRecruiter',
-      description: 'A job board application that connects job seekers with employers. Built with TypeScript, TailwindCSS, and JavaScript.🛠️ Most of site is up and functional but is still under construction.',
-      tech: ['TypeScript','Tailwind CSS', 'JavaScript'],
-      image: '/JRecruiter.png',
-      github: 'https://github.com/DippaFudd/JRecruiter',
-      live: 'https://j-recruiter.vercel.app/'
-    }
   ];
 
   useEffect(() => {
@@ -253,39 +235,32 @@ export default function Portfolio() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 px-4 bg-black/20">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-            Skills & Technologies
-          </h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {skills.map((skill, index) => (
-              <div
-                key={skill.name}
-                className={`bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 transform transition-all duration-700 hover:scale-105 ${
-                  isVisible.skills ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-                }`}
-                style={{ transitionDelay: `${index * 100}ms` }}
-              >
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="text-blue-400">{skill.icon}</div>
-                  <h3 className="text-xl font-semibold">{skill.name}</h3>
-                </div>
-                
-                <div className="w-full bg-gray-700 rounded-full h-2 mb-2">
-                  <div
-                    className="bg-gradient-to-r from-blue-500 to-cyan-500 h-2 rounded-full transition-all duration-1000 ease-out"
-                    style={{ width: isVisible.skills ? `${skill.level}%` : '0%' }}
-                  ></div>
-                </div>
-                
-                <span className="text-sm text-gray-400">{skill.level}%</span>
-              </div>
-            ))}
+<section id="skills" className="py-20 px-4 bg-black/20">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+      Skills & Technologies
+    </h2>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {skills.map((skill, index) => (
+        <div
+          key={skill.name}
+          className={`bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 transform transition-all duration-700 hover:scale-105 ${
+            isVisible.skills
+              ? 'translate-y-0 opacity-100'
+              : 'translate-y-10 opacity-0'
+          }`}
+          style={{ transitionDelay: `${index * 100}ms` }}
+        >
+          <div className="flex items-center space-x-3">
+            <div className="text-blue-400">{skill.icon}</div>
+            <h3 className="text-xl font-semibold">{skill.name}</h3>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4">
